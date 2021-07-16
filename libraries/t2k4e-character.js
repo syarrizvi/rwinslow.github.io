@@ -19,12 +19,13 @@ var upbringings = {
     }
 };
 
-var origins = [
-    'Algol',
-    'Mira',
-    'Kua',
-    'Dabaran',
-    'Zalos'
+var Nationality = [
+    'American',
+    'Soviet',
+    'Polish',
+    'British',
+    'German',
+    'French'
 ];
 
 var icons = [
@@ -129,7 +130,7 @@ var concepts = {
         'gear': [
            ['Anonymous', 'Tag with 500 birr clothing'],
            ['Communicator (II)', 'Protective clothing'],
-           ['Vulcan carbine', 'Dura sword'],
+           ['carbine', 'Dura sword'],
            ['Thermostatic suit', 'Exoshell'],
            ['Transactor with fake identity', 'Mask ']
         ]
@@ -357,7 +358,7 @@ function coriolisGenerateCharacter(background, concept, subconcept) {
     var attributes = {
         'Strength': 1,
         'Agility': 1,
-        'Wits': 1,
+        'Intelligence': 1,
         'Empathy': 1
     };
 
@@ -463,7 +464,7 @@ function coriolisGenerateCharacter(background, concept, subconcept) {
     $('.coriolis-character .subconcept.fill').html(subconcept);
     $('.coriolis-character .strength.fill').html(attributes['Strength']);
     $('.coriolis-character .agility.fill').html(attributes['Agility']);
-    $('.coriolis-character .wits.fill').html(attributes['Wits']);
+    $('.coriolis-character .wits.fill').html(attributes['Intelligence']);
     $('.coriolis-character .empathy.fill').html(attributes['Empathy']);
     $('.coriolis-character .face.fill').html(face);
     $('.coriolis-character .clothing.fill').html(clothing);
